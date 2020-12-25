@@ -11,11 +11,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           //  Console.WriteLine("Наберите текст");
-
+           
              string filename="startup.txt";
-       //      string time = DateTime.Now;
-             File.WriteAllText(filename, DateTime.Now); 
+             DateTime now =DateTime.Now;
+             File.WriteAllText(filename, now.ToString()); 
 
           
             string fileText = File.ReadAllText(filename);
